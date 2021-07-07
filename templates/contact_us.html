@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style_contactus_page.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="dropdown">
+                <img id="logo1" src="../images/website logos/logo1.jpeg" alt="logo">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
+            </div>
+            <a href="main_page.html">
+                <img id="logo2" src="../images/website logos/logo2.png" alt="nameplate">
+            </a>
+            <div class="right">
+                <a href="https://www.indianarmy.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Army page" src="../images/logos/army.png" alt="Army logo">
+                </a>
+                <a href="http://www.indiannavy.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Navy page" src="../images/logos/navy.png" alt="Navy logo">
+                </a>
+                <a href="http://indianairforce.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Airforce force page" src="../images/logos/airforce.png" alt="Airforce logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="main_page.html">HOME</a></li>
+                <li><a href="newsfeed.html">NEWS FEED</a></li>
+                <li><a href="exam_main_page.html">EXAMS</a></li>
+                <li class="hof"><a href="">HALL OF FAME</a>
+                    <div class="sub-menu-hof">
+                        <ul>
+                            <li><a href="hof_army.html">ARMY</a></li>
+                            <li><a href="hof_navy.html">NAVY</a></li>
+                            <li><a href="hof_airforce.html">AIRFORCE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="he.html">HISTORICAL EVENTS</a></li>
+                <li><a href="donation_page.html">DONATIONS</a></li>
+                <div class="right">
+                    <li class="bell"><a href="#">
+                        <img src="../Images/bell.svg" style="vertical-align: middle;" alt="bell" width="20px"></a> 
+                        <div class="sub-menu-bell">
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing.</a></li>
+                            </ul>
+                        </div>   
+                    </li>
+                    <li class="user"><a href="#">
+                        <img src="../Images/user.svg" style="vertical-align: middle;" alt="user" width="20px"></a>
+                        <div class="sub-menu-user">
+                            <ul>
+                                <li><a href="settings.html"><i class="far fa-user-circle"></i>Profile</a></li>
+                                <li><a href="settings.html"><i class="fas fa-bookmark"></i>Bookmarks</a></li>
+                                <li><a href="settings.html"><i class="fas fa-cog"></i>Settings</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="main_container">
+            <!--Added By Omkar Mudkanna for Contact Us page-->
+            <div id="contact_us_container">
+                <div id="contact_us_grid">
+                    <div id="contact_us_details">
+                        <h2>IAFpedia address</h2>
+                        <p>Address: 666, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</p>
+                        <p>Official email id: iafpedia@gmail.com</p>
+                        <p>Contact : ##########</p>
+                        <!-- <br>
+                        <h2>Creators</h2>
+                        <p>contact</p>
+                        <p>contact</p>
+                        <p>contact</p>
+                        <p>contact</p>
+                        <p>contact</p>
+                        <p>contact</p> -->
+                    </div>
+                    <div id="contact_us_maps">
+                        <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=Vishwakarma institute of technoloy&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">Friday Night Funkin Mods</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {height:500px!important;}</style></div>
+                    </div>
+                </div>
+            </div>
+            <!--Added By Omkar Mudkanna for Contact Us page-->
+        </div>
+        <!--Pixel count for class 'last-space' reduced from 2000px to 800px-->
+        <div class="last-space"></div>
+    </main>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="privacy_policy_page.html">Privacy Policy</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        //get the modal
+        var modal = document.getElementById("myModal");
+        //get the image and insert it inside thmodal-use its "alt" text as a caption
+        var img = document.getElementById("logo1");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        //get the <span> element thet closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        //when the user clicks on <span> (x), close thmodal
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

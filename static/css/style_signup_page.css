@@ -1,0 +1,458 @@
+* {
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background:#f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin: 0;
+}
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: maroon;
+    color: rgb(211, 211, 211);
+    padding:5px 0;
+    position:sticky;
+    top:0;
+    z-index: 2;
+}
+#logo1 {
+    vertical-align:middle;
+    width:70px;
+    padding-left:10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#logo1:hover{
+    width: 75px;
+}
+#logo2 {
+    vertical-align:middle;
+    width:280px;
+    padding-left:10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    min-height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 5;
+}
+  
+.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+.iaf-logos {
+    box-sizing: border-box;
+    margin-right: 30px;
+    vertical-align:middle;
+    height: 80px;
+    border-radius: 50%;
+}
+.iaf-logos:hover {
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.right{
+    display: inline;
+    float:right;
+    margin-right: 20px;
+}
+.full-form {
+    font-size: 20px;
+    vertical-align:bottom;
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+header a:hover {
+    text-shadow: 0.5px 0.5px #f4f4f4;
+} 
+header h6 {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+nav {
+    display: none;
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    position:sticky;
+    top:95px;
+    z-index: 2;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul ul{
+    display: none;
+}
+
+
+nav li {
+    display: inline;
+    color:white;
+}
+nav a {
+    box-sizing: border-box;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-size:18px;
+    padding:2px 5px;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+    /* border:black solid 2px; */
+} 
+/* nav li:nth-child(1){
+    padding-left:20px;
+} */
+main{
+    background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:802px;/*TO BE MODIFIED (get device screen height)*/
+}
+.bg {
+    background: rgba(255, 255, 255,0.3);
+    width:100%;
+    height:802px;/*TO BE MODIFIED (get device screen height)*/
+}
+.small-space{
+    margin-top:10px;
+}
+.medium-space{
+    margin-top:50px;
+}
+.center {
+    text-align:center;
+}
+.space {
+    margin-top: 100px;
+}
+.last-space {
+    margin-top:500px;
+}
+footer {
+    display: none;
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    text-align: center;
+    bottom: 0;
+}
+footer ul{
+    list-style: none;
+}
+footer li {
+    display: inline;
+    padding-right: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+footer a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+
+.sub-menu-bell{
+    display: none;
+}
+
+.bell:hover .sub-menu-bell{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -50px;
+    /* margin-right: 10px; */
+} 
+
+.bell:hover .sub-menu-bell ul{
+    display: block;
+    margin: 10px;
+}
+
+.bell:hover .sub-menu-bell ul li{
+    width:fit-content;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid white;
+} 
+
+.sub-menu-user{
+    display: none;
+}
+
+.sub-menu-user ul li{
+    text-align: right;
+}
+
+.user:hover .sub-menu-user{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -70px;
+    /* margin-right: 10px; */
+}
+
+.user:hover .sub-menu-user ul{
+    display: block;
+    margin: 10px;
+}
+
+.user:hover .sub-menu-user ul li{
+    width:fit-content;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid white;
+    text-align: center;
+} 
+ .sub-menu-hof{
+    display: none;
+}
+
+.hof:hover .sub-menu-hof{
+    position: absolute;
+    display: block;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: 200px;
+}  
+
+.hof:hover .sub-menu-hof ul{
+    display: block;
+    /* margin: 10px; */
+ } 
+
+.hof:hover .sub-menu-hof ul li{
+    display: block;
+    width: fit-content;
+    padding: 5px; 
+    /* border-bottom: 1px solid white; */
+    text-align: center; 
+
+ }
+
+.sub-menu-hof ul li:hover{
+    background-color: red;
+} 
+main{
+    background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:1600px;/*TO BE MODIFIED (get device screen height)*/
+}
+.bg {
+    background: rgba(255, 255, 255,0.3);
+    width:100%;
+    height:1600px;/*TO BE MODIFIED (get device screen height)*/
+}
+form {
+    color: black;
+    border:black solid 1px;
+    background:rgb(191, 216, 219,0.8);
+    padding: 40px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+form h1{
+    text-align:center;
+}
+form label{
+    font-size:18px;
+    display: block;
+    width: 300px;
+    padding: 12px;
+    margin: 0 20px;
+}
+
+form input {
+    padding: 7px;
+    font-size: 18px;
+}
+form input[type=radio] {
+    margin-left:10px;
+}
+#uname_ans{
+    margin-left: 40px;
+    color: red;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#date_ans{
+    margin-left: 220px;
+    color: red;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#email_ans{
+    margin-left: 40px;
+    color: red;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#pincode_ans{
+    margin-left: 40px;
+    color: red;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#pass_ans1{
+    margin-left: 40px;
+    color: red;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#pass_ans2{
+    margin-left: 40px;
+    color: red;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+select {
+    color:rgb(107, 107, 107);
+}
+.pass {
+    margin-right:0.15em;/*not efficient*/
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select
+{
+    padding: 7px;
+    font-size: 18px;
+    width: 450px;
+    padding: 12px;
+    margin: 0 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.inline-label {
+    display: inline;
+}
+.gender-label {
+    margin-left: 0;
+    margin-right: 50px;
+}
+#male {
+    margin-left: 40px;
+}
+.small-space{
+    margin-top:10px;
+}
+.medium-space{
+    margin-top:50px;
+}
+.center {
+    text-align:center;
+}
+.space {
+    margin-top: 100px;
+}
+.button {
+    background: #245526;
+    color: #f4f4f4;
+    border: none;
+    font-size:20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover {
+    background: #3c8f3f;
+    color: #f4f4f4;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 45px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 40%;  
+}
+/* Animation*/
+.modal-content{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* close button*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

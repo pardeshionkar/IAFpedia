@@ -1,0 +1,419 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    background:#f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin: 0;
+}
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: maroon;
+    color: white;
+    padding:5px 0;
+    position:sticky;
+    top:0;
+    z-index: 2;
+}
+#logo1 {
+    vertical-align:middle;
+    width:70px;
+    padding-left:10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#logo1:hover{
+    width: 75px;
+}
+#logo2 {
+    vertical-align:middle;
+    width:280px;
+    padding-left:10px;
+}
+.iaf-logos {
+    box-sizing: border-box;
+    margin-right: 30px;
+    vertical-align:middle;
+    height: 80px;
+    border-radius: 50%;
+}
+.iaf-logos:hover {
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.right{
+    display: inline;
+    float:right;
+    margin-right: 10px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+header a:hover {
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+nav {
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    position:sticky;
+    top:95px;
+    z-index:1;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline;
+    color:white;
+}
+nav a {
+    box-sizing: border-box;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-size:18px;
+    padding:2px 5px;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+nav li:nth-child(1){
+    padding-left:20px;
+}
+.small-space{
+    margin-top:10px;
+}
+.medium-space{
+    margin-top:50px;
+}
+.large-space {
+    margin-top: 100px;
+}
+.last-space {
+    margin-top:2000px;
+}
+footer {
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    text-align: center;
+    bottom: 0;
+}
+footer ul{
+    list-style: none;
+}
+footer li {
+    display: inline;
+    padding-right: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+footer a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+/*ADDED 25-06-2021*/
+/* Commented by Sakshi Ozarde on 26-06-2021*/
+/*#main_container{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}*/
+/*Commented by Sakshi Ozarde on 26-06-2021*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 45px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 40%;  
+}
+/* Animation*/
+.modal-content{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* close button*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*ADDED 26-06-2021*/
+.sub-menu-bell{
+    display: none;
+}
+.bell:hover .sub-menu-bell{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -150px;
+}
+.bell:hover .sub-menu-bell ul{
+    display: block;
+    margin: 10px;
+}
+.bell:hover .sub-menu-bell ul li{
+    width:200px;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+.sub-menu-user{
+    display: none;
+}
+.sub-menu-user ul{
+    text-align: left;
+}
+.user:hover .sub-menu-user{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -70px;
+}
+.user:hover .sub-menu-user ul{
+    display: block;
+    margin: 10px;
+}
+.user:hover .sub-menu-user ul li{
+    width:120px;
+    display: block;
+    padding: 5px;
+}
+.sub-menu-hof{
+    display: none;
+}
+i{
+    margin-right: 5px;
+}
+.hof:hover .sub-menu-hof{
+    position: absolute;
+    display: block;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+.hof:hover .sub-menu-hof ul{
+    display: block;
+}
+.hof:hover .sub-menu-hof ul li{
+    display: block;
+    width: fit-content;
+    padding: 5px;
+}
+.sub-menu-hof ul{
+    text-align: center;
+}
+.sub-menu-hof ul li:hover{
+    text-shadow: 0.5px 0.5px #f4f4f4; 
+}
+/* Edited by sakshi ozarde on 26-06-2021 */
+main{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+.slideshow{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 500%;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center; 
+}
+.slides{
+    width: 500%;
+    display: flex;  
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+/* manual slide navigation*/
+.navigation-manual{
+    position: absolute;
+    width:100%;
+    margin-top: -52px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #40D3DC;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+/* css for navigation automatic*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 455px;
+}
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #40D3DC;
+}
+.text{
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+}
+.leftside{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.rightside{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    float: right;
+    border-radius: 10px;
+    background-color: #ADD8E6;
+    font-style: italic;
+    padding-left: 15px;
+    margin-left: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(71, 103, 248, 0.2)
+}
+.text h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    font-weight: bold;
+    color: darkred;
+    text-align: center;
+}
+.text p{
+    font-size: x-large;
+    font-family: monospace;
+    font-style: normal;
+    width: 80%;
+    margin: 20px;
+    padding: 10px;
+}
+.button{
+    background: rgb(75, 24, 72);
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    margin-top: 40px ;
+    display: block;
+    width: fit-content; 
+    margin: 20px auto 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+}
+.button:hover{
+    background-color: rgb(228, 129, 145);
+    color: #333;
+}
+.button:active{
+    background-color: rgb(6, 39, 11);
+    color: white;
+}
+/* Edited by sakshi ozarde on 26-06-2021 */

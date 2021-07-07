@@ -1,0 +1,68 @@
+[
+    {
+        "username":"omkarm",
+        "name":"Omkar Mudkanna",
+        "password":"omkarm2887",
+        "email":"omkar.mudkanna20@vit.edu",
+        "dob":"2002-04-06",
+        "gender":"male",
+        "pincode":"411024",
+        "state":"Maharashtra",
+        "city":"Pune"
+    },
+    {
+        "username":"omkarj",
+        "name":"Omkar Jahagirdar",
+        "password":"omkarj2887",
+        "email":"omkar.jahagirdar20@vit.edu",
+        "dob":"2002-03-06",
+        "gender":"male",
+        "pincode":"411057",
+        "state":"Maharashtra",
+        "city":"Pune"
+    },
+    {
+        "username":"onkarp",
+        "name":"Onkar Pardeshi",
+        "password":"onkarp2887",
+        "email":"onkar.pardeshi20@vit.edu",
+        "dob":"2002-01-07",
+        "gender":"male",
+        "pincode":"413701",
+        "state":"Maharashtra",
+        "city":"Ahmednagar"
+    },
+    {
+        "username":"abhisheko",
+        "name":"Abhishek Otari",
+        "password":"abhisheko2887",
+        "email":"abhishek.otari20@vit.edu",
+        "dob":"2002-21-10",
+        "gender":"male",
+        "pincode":"413004",
+        "state":"Maharashtra",
+        "city":"Solapur"
+    },
+    {
+        "username":"sakshio",
+        "name":"Sakshi Ozarde",
+        "password":"sakshio2887",
+        "email":"sakshi.ozarde20@vit.edu",
+        "dob":"2003-02-04",
+        "gender":"female",
+        "pincode":"415004",
+        "state":"Maharashtra",
+        "city":"Satara"
+    },
+    {
+        "username":"adityap",
+        "name":"Aditya Pachore",
+        "password":"adityap2887",
+        "email":"aditya.pachore20@vit.edu",
+        "dob":"2002-26-07",
+        "gender":"male",
+        "pincode":"414606",
+        "state":"Maharashtra",
+        "city":"Ahmednagar"
+    }
+]

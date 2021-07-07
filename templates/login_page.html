@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style_login_page.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Login page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="dropdown">
+                <img id="logo1" src="../images/website logos/logo1.jpeg" alt="logo">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
+            </div>
+                <img id="logo2" src="../images/website logos/logo2.png" alt="nameplate">
+            <div class="right">
+                <a href="https://www.indianarmy.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Army page" src="../images/logos/army.png" alt="Army logo">
+                </a>
+                <a href="http://www.indiannavy.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Navy page" src="../images/logos/navy.png" alt="Navy logo">
+                </a>
+                <a href="http://indianairforce.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Airforce force page" src="../images/logos/airforce.png" alt="Airforce logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bg">
+            <form>
+                <h1>LOGIN</h1>
+                <div class="medium-space"></div>
+
+                <label>Enter username:</label>
+                <div class="small-space"></div>
+                <input type="text" required placeholder="Your username" id="uname_test">
+                <div class="small-space"></div>
+
+                <label class="pass">Enter password:</label>
+                <div class="small-space"></div>
+                <input type="password" required placeholder="Your password" id="pass_test">
+                <div class="medium-space"></div>
+                <ul id="db_ans"></ul>
+                <div class="center">
+                    <a href="forg_pass_page.html">Forgot password?</a>
+                    <div class="small-space"></div>
+                    <span>Don't have an account,</span>
+                    <a href="signup_page.html">Sign up!</a>
+
+                    <div class="small-space"></div>
+                    <button type="submit" class="button" id="submit">Login</button>
+                    <!--<input type="submit" value="Login" class="button" id="submit" onclick="pass_test()">-->
+
+                    <!--Abhishek ADDED-->
+                    <div class="small-space"></div>
+                    <div id="or">-OR-</div>
+                    <div id="sm-text">Sign Up with</div>
+    
+                    <div class="socialBtn">
+                        <div id="googleicon">
+                            <a href="https://www.google.com/" target="blank">
+                                <button type="button">
+                                    <span class="space" >Google</span>
+                                    <i class="fab fa-google"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div id="facebookicon">
+                            <a href="https://www.facebook.com" target="main">
+                                <button type="button">
+                                    <span class="space">Facebook</span>
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Abhishek ADDED-->
+                </div>
+            </form>
+        </div>
+        <!-- <div class="last-space"></div> -->
+    </main>
+    <script>
+        //get the modal
+        var modal = document.getElementById("myModal");
+        //get the image and insert it inside thmodal-use its "alt" text as a caption
+        var img = document.getElementById("logo1");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        //get the <span> element thet closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        //when the user clicks on <span> (x), close thmodal
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+    </script>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>

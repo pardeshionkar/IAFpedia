@@ -1,0 +1,81 @@
+{% extends 'base_page.html' %}
+{% load static %}
+
+{%block css%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_main_page.css' %}">{%endblock css%}
+{% block title %}Home{% endblock title %}
+{% block body %}
+            <div class="slideshow">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <div class="slide first">
+                            <img src="{% static 'images/Slideshow_images/slideshow_1.jpg' %}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img  src="{% static 'images/Slideshow_images/slideshow_2.jpg' %}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img  src="{% static 'images/Slideshow_images/slideshow_3.jpg' %}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img  src="{% static 'images/Slideshow_images/slideshow_4.jpg' %}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img  src="{% static 'images/Slideshow_images/slideshow_5.jpg' %}" alt="">
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label> 
+                        <label for="radio2" class="manual-btn"></label> 
+                        <label for="radio3" class="manual-btn"></label> 
+                        <label for="radio4" class="manual-btn"></label> 
+                        <label for="radio5" class="manual-btn"></label> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added by Abhishek on 01-07-21 -->
+
+            <div class="flex">
+                <div class="exam">
+                    <p id="exam-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam explicabo, non voluptatibus ex mollitia sit ipsum veniam laboriosam aliquam hic sunt? Eum exercitationem maiores molestiae ipsam, porro nemo laboriosam.<br>
+                        <a href="#"><button>KNOW MORE</button></a>
+                    </p>     
+                </div>
+                <div class="message-box">
+                   <div class="img-message">
+                       <img id="img" src="{% static 'images/Slideshow_images/director.jpg' %}" alt="">
+                   </div>
+                   <div class="message">
+                       <h3 style="text-align: center; margin-bottom: 5px;font-family: Georgia, 'Times New Roman', Times, serif;">Message from Director</h3>
+                       <p><i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus illum iusto totam, consequuntur facere voluptas explicabo qui ut aliquam vero aut, harum quo veritatis aperiam mollitia? Nisi, quaerat ratione!<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatem quos distinctio facere, omnis consequuntur fugit quam eveniet? Autem iste quae obcaecati dicta pariatur doloremque aut delectus neque animi vitae?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reiciendis delectus laudantium adipisci id, perspiciatis voluptatem assumenda sint tempora! Illum officiis harum corporis eius ad aspernatur pariatur quia quisquam itaque."</i>
+                       </p>
+                   </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="items" id="items1"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image4.jpg' %}" alt=""></div>
+                <div class="items" id="items2"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image2.jpg' %}" alt=""></div>
+                <div class="items" id="items3"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image3.jpg' %}" alt=""></div>
+                <div class="items" id="items4"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image1.jpg' %}" alt=""></div>
+                <div class="items" id="items5"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image5.jpg' %}" alt=""></div>
+                <div class="items" id="items6"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image7.jpg' %}" alt=""></div>
+                <div class="items" id="items7"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image9.jpg' %}" alt=""></div>
+                <div class="items" id="items8"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image8.jpg' %}" alt=""></div>
+                <div class="items" id="items9"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image6.jpg' %}" alt=""></div>
+                <div class="items" id="items10"><img id="grid-img" src="{% static 'images/Gallary_images/gallary_image10.jpg' %}" alt=""></div>
+            </div>
+{% endblock body %}

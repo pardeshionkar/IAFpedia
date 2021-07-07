@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style_signup_page.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Signup page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="dropdown">
+                <img id="logo1" src="../images/website logos/logo1.jpeg" alt="logo">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
+            </div>
+                <img id="logo2" src="../images/website logos/logo2.png" alt="nameplate">
+            <div class="right">
+                <a href="https://www.indianarmy.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Army page" src="../images/logos/army.png" alt="Army logo">
+                </a>
+                <a href="http://www.indiannavy.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Navy page" src="../images/logos/navy.png" alt="Navy logo">
+                </a>
+                <a href="http://indianairforce.nic.in/" target="_blank">
+                    <img class="iaf-logos" title="Go to official Indian Airforce force page" src="../images/logos/airforce.png" alt="Airforce logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bg">
+            <form id="form" action="main_page.html">
+                <h1>SIGNUP</h1>
+                <div class="medium-space"></div>
+                <label>Enter fullname:</label>
+                <input id="fname_test" type="text" required placeholder="Your fullname">
+                <div class="small-space"></div>
+
+                <label>Enter username:</label>
+                <input id="uname_test" type="text" required placeholder="Your username" onchange="checkuname()">
+                <ul id="uname_ans"></ul>
+                <div class="medium-space"></div>
+
+                <label class="inline-label">Enter Date of Birth:</label>
+                <input id="date_test" type="date" placeholder="dd-mm-yyyy" required onchange="check_date(document.getElementById('date_test').value)">
+                <ul id="date_ans"></ul>
+                <div class="small-space"></div>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="btn" required>
+                <label class="inline-label gender-label" for="male">Male</label>
+                <input type="radio" id="female"name="btn">
+                <label class="inline-label gender-label" for="female">Female</label>
+                <input type="radio" id="other" name="btn">
+                <label class="inline-label gender-label" for="other">Other</label>
+                <div class="small-space"></div>
+
+                <label>Enter email:</label>
+                <input id="email_test" type="text" required placeholder="Your email" onchange="check_email()">
+                <ul id="email_ans"></ul>
+                <div class="small-space"></div>
+
+                <!--
+                <label>Enter state:</label>
+                <select name="State" id="State" required>
+                </select>
+                <div class="small-space"></div>
+
+                <label>Enter city:</label>
+                <select name="City" id="City" required>
+                    <option>Select City</option>
+                </select>
+                -->
+                <label>Enter state:</label>
+                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+                <div class="small-space"></div>
+
+                <label>Enter city:</label>
+                <select id ="state" class="form-control" required>
+                    <option>Select City</option>
+                </select>
+
+                <div class="small-space"></div>
+
+                <label>Enter pincode:</label>
+                <input id="pincode_test" type="number" required placeholder="Your pincode" onchange="check_pincode()">
+                <ul id="pincode_ans"></ul>
+                <div class="small-space"></div>
+                
+                <label class="pass">Enter password:</label>
+                <input id="pass_test1" type="password" required placeholder="Your password" onchange="checkpass()">
+                <ul id="pass_ans1"></ul>
+                <div class="small-space"></div>
+
+                <label class="pass">Re-enter password:</label>
+                <input id="pass_test2" type="password" required placeholder="Your password" onchange="confirmpass()">
+                <p id="pass_ans2"></p>
+                <div class="medium-space"></div>
+
+                <div class="center">
+                    <span>Already have an account,</span>
+                    <a href="login_page.html">Sign in!</a>
+
+                    <div class="medium-space"></div>
+                    <input id="submit_test" type="submit" value="Signup" class='button'>
+                    <p id="submit"></p>
+                </div>
+            </form>
+        </div>
+        <!--<div class="last-space"></div>-->
+    </main>
+    <script>
+        //get the modal
+        var modal = document.getElementById("myModal");
+        //get the image and insert it inside thmodal-use its "alt" text as a caption
+        var img = document.getElementById("logo1");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        //get the <span> element thet closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        //when the user clicks on <span> (x), close thmodal
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+    </script>
+    <script src="../scripts/sigup.js"></script>
+    <script src="../scripts/cities.js"></script>
+    <script language="javascript">print_state("sts");</script>
+</body>
+</html>

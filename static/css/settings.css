@@ -1,0 +1,294 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    background:#f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin: 0;
+}
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: maroon;
+    color: white;
+    padding:5px 0;
+    position:sticky;
+    top:0;
+    z-index: 2;
+}
+#logo1 {
+    vertical-align:middle;
+    width:70px;
+    padding-left:10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#logo1:hover{
+    width: 75px;
+}
+#logo2 {
+    vertical-align:middle;
+    width:280px;
+    padding-left:10px;
+}
+.iaf-logos {
+    box-sizing: border-box;
+    margin-right: 30px;
+    vertical-align:middle;
+    height: 80px;
+    border-radius: 50%;
+}
+.iaf-logos:hover {
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.right{
+    display: inline;
+    float:right;
+    margin-right: 10px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+header a:hover {
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+nav {
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    position:sticky;
+    top:95px;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline;
+    color:white;
+}
+nav a {
+    box-sizing: border-box;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-size:18px;
+    padding:2px 5px;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+nav li:nth-child(1){
+    padding-left:20px;
+}
+.small-space{
+    margin-top:10px;
+}
+.medium-space{
+    margin-top:50px;
+}
+.large-space {
+    margin-top: 100px;
+}
+.last-space {
+    margin-top:2000px;
+}
+footer {
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    text-align: center;
+    bottom: 0;
+}
+footer ul{
+    list-style: none;
+    margin-left: 360px;
+}
+footer li {
+    display: inline;
+    padding-right: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+footer a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+/*ADDED 25-06-2021*/
+#main_container{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 45px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 40%;  
+}
+/* Animation*/
+.modal-content{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* close button*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*ADDED 26-06-2021*/
+.sub-menu-bell{
+    display: none;
+}
+.bell:hover .sub-menu-bell{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -150px;
+}
+.bell:hover .sub-menu-bell ul{
+    display: block;
+    margin: 10px;
+}
+.bell:hover .sub-menu-bell ul li{
+    width:200px;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+.sub-menu-user{
+    display: none;
+}
+.sub-menu-user ul{
+    text-align: left;
+}
+.user:hover .sub-menu-user{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -70px;
+}
+.user:hover .sub-menu-user ul{
+    display: block;
+    margin: 10px;
+}
+.user:hover .sub-menu-user ul li{
+    width:120px;
+    display: block;
+    padding: 5px;
+}
+.sub-menu-hof{
+    display: none;
+}
+i{
+    margin-right: 5px;
+}
+.hof:hover .sub-menu-hof{
+    position: absolute;
+    display: block;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+.hof:hover .sub-menu-hof ul{
+    display: block;
+}
+.hof:hover .sub-menu-hof ul li{
+    display: block;
+    width: fit-content;
+    padding: 5px;
+}
+.sub-menu-hof ul{
+    text-align: center;
+}
+.sub-menu-hof ul li:hover{
+    text-shadow: 0.5px 0.5px #f4f4f4; 
+}
+
+/* Abhishek Added on 26-06-21 */
+
+.slidebar{
+    position: fixed;
+    left: 0;
+    top: 16vh;
+    width: 250px;
+    height: 100vh;
+    background: rgb(40, 40, 40);
+    z-index: 1;
+}
+.slidebar h4{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(65, 64, 64);
+    user-select: none;
+}
+.slidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255 ,255 ,0.1 );
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+.slidebar ul a:hover{
+    background: rgb(26, 25, 25);
+}
+.slidebar ul a i{
+    margin-right: 15px;
+}
+/* Abhishek Added on 26-06-21 */

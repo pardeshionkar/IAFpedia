@@ -1,0 +1,352 @@
+* {
+    padding:0;
+    margin:0;
+}
+body {
+    background:#f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin: 0;
+}
+.container {
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: maroon;
+    color: white;
+    padding:5px 0;
+    position:sticky;
+    top:0;
+    z-index: 2;
+}
+#logo1 {
+    vertical-align:middle;
+    width:70px;
+    padding-left:10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#logo1:hover{
+    width: 75px;
+}
+#logo2 {
+    vertical-align:middle;
+    width:280px;
+    padding-left:10px;
+}
+.iaf-logos {
+    box-sizing: border-box;
+    margin-right: 30px;
+    vertical-align:middle;
+    height: 80px;
+    border-radius: 50%;
+}
+.iaf-logos:hover {
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.right{
+    display: inline;
+    float:right;
+    margin-right: 10px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+header a:hover {
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+nav {
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    position:sticky;
+    top:95px;
+    z-index:1;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline;
+    color:white;
+}
+nav a {
+    box-sizing: border-box;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-size:18px;
+    padding:2px 5px;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+nav li:nth-child(1){
+    padding-left:20px;
+}
+.small-space{
+    margin-top:10px;
+}
+.medium-space{
+    margin-top:50px;
+}
+.large-space {
+    margin-top: 100px;
+}
+.last-space {
+    /*margin-top:2000px;*/
+    /*Styling added by Omkar Mudkanna for about_us page*/
+    margin-top:800px;
+    /*Styling added by Omkar Mudkanna for about_us page*/
+}
+footer {
+    width:100%;
+    background: #333;
+    padding:15px 0;
+    text-align: center;
+    bottom: 0;
+}
+footer ul{
+    list-style: none;
+}
+footer li {
+    display: inline;
+    padding-right: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+footer a:hover {
+    color: white;
+    text-shadow: 0.5px 0.5px #f4f4f4;
+}
+/*ADDED 25-06-2021*/
+#main_container{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 45px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 40%;  
+}
+/* Animation*/
+.modal-content{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* close button*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*ADDED 26-06-2021*/
+.sub-menu-bell{
+    display: none;
+}
+.bell:hover .sub-menu-bell{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -150px;
+}
+.bell:hover .sub-menu-bell ul{
+    display: block;
+    margin: 10px;
+}
+.bell:hover .sub-menu-bell ul li{
+    width:200px;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+.sub-menu-user{
+    display: none;
+}
+.sub-menu-user ul{
+    text-align: left;
+}
+.user:hover .sub-menu-user{
+    display: block;
+    position: absolute;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: -70px;
+}
+.user:hover .sub-menu-user ul{
+    display: block;
+    margin: 10px;
+}
+.user:hover .sub-menu-user ul li{
+    width:120px;
+    display: block;
+    padding: 5px;
+}
+.sub-menu-hof{
+    display: none;
+}
+i{
+    margin-right: 5px;
+}
+.hof:hover .sub-menu-hof{
+    position: absolute;
+    display: block;
+    background: #333;
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+.hof:hover .sub-menu-hof ul{
+    display: block;
+}
+.hof:hover .sub-menu-hof ul li{
+    display: block;
+    width: fit-content;
+    padding: 5px;
+}
+.sub-menu-hof ul{
+    text-align: center;
+}
+.sub-menu-hof ul li:hover{
+    text-shadow: 0.5px 0.5px #f4f4f4; 
+}
+
+/*Styling added by Omkar Mudkanna for about_us page*/
+#Aboutus_container{
+    /*top: 20%;*/
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightskyblue;
+    width: 60%;;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(71, 103, 248, 0.2);
+}
+#Aboutus_container h1{
+    position: relative;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Aboutus_container article{
+    margin-top: 20px;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#section1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#section2{
+    position: relative;
+    margin-top: 10px;
+}
+#section2_para1{
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#section2_para2{
+    margin-left: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+#section3{
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+}
+#section3 p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#about_creator{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: lightskyblue;
+    box-shadow: 2px 2px 2px 2px rgba(71, 103, 248, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#creator_head{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#creator_templates{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px; 
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    box-sizing: border-box;
+    padding: 10px;
+}
+#creator_1,#creator_2,#creator_3,#creator_4,#creator_5,#creator_6{
+    background-color: lavender;
+    font-weight: 540;
+    font-style: italic;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#creator_content1,#creator_content2,#creator_content3,#creator_content4,#creator_content5,#creator_content6{
+    display: flex;
+    justify-content: flex-start;
+}
+#creator_templates ul{
+    margin-left: 15px;
+}
+/*Styling added by Omkar Mudkanna for about_us page*/
