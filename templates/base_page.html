@@ -41,7 +41,7 @@
             <ul>
                 <li><a href="{% url 'main_page' %}">HOME</a></li>
                 <li><a href="newsfeed.html">NEWS FEED</a></li>
-                <li><a href="exam_main_page.html">EXAMS</a></li>
+                <li><a href="{% url 'exams' %}">EXAMS</a></li>
                 <li class="hof"><a href="">HALL OF FAME</a>
                     <div class="sub-menu-hof">
                         <ul>
@@ -82,6 +82,7 @@
         <div id="main_container">
             {% block body %}{% endblock body %}
         </div>
+        {% block space %}{% endblock space %}
         <!-- <div class="last-space"></div> -->
     </main>
     <footer>
@@ -89,7 +90,7 @@
             <ul>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="sources.html">Sources</a></li>
-                <li><a href="privacy_policy_page.html">Privacy Policy</a></li>
+                <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </div>
